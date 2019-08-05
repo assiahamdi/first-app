@@ -1,0 +1,191 @@
+<html lang="en" ng-app ="myapp">
+<head>
+  <title>SYNCHRONECS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body ng-controller ="test" >
+  <contenu-navbar>
+  </contenu-navbar>
+  <contenu-slider></contenu-slider>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1 id="equipe">BIENVENUE CHEZ SYNCHRONECS</h1>
+    <p>Vous voulez contactez un expert en informatique ?!</p> 
+    <button  id="bouton" class="btn btn-primary btn-block" onclick="bascule('header');">cliquez ici !</button>
+  </div>
+</div>
+<div style="display: none; "  id="header" class="container">
+  <div class="row">
+   <div class="col-sm-4">
+    <div  class="card" >
+      <img class="card-img-top" src="images/assia.jpg" alt="Card image" >
+      <div class="card-body">
+        <h4 class="card-title">Assia HAMDI</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#infos">Contactez-nous</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card" >
+      <img class="card-img-top" src="images/assia.jpg" alt="Card image" >
+      <div class="card-body">
+        <h4 class="card-title">Assia HAMDI</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#infos">Contactez-nous</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card" >
+      <img class="card-img-top" src="images/assia.jpg" alt="Card image" >
+      <div class="card-body">
+        <h4 class="card-title">Assia HAMDI</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#infos">Contactez-nous</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Alert information -->
+
+<div class="modal" id="infos">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Plus d'informations</h4>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>            
+      </div>
+      <div class="modal-body">
+        Entre votre email ou votre numéro de telephone, nous vous contacterons plus tard :
+        <br>
+        <input class="container" type="text" name="saisir votre numéro ou adresse email">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" >Envoyer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4" id="service">SERVICE</h1>
+      <p class="lead">Nous étudions et réalisons les outils et services intelligents, les applications et systemes informatiques pour la supervision, le controle et l'automatisation de vos activités.L’idée maîtresse de notre projet est de créer et animer des systémes de collaboration d’entreprise, alliant intelligence, flexibilité et robustesse. Nous ambitionnons d’apporter à nos clients et partenaires la plus-value technique et métier, pour optimiser leur travail au quotidien et accompagner leur systéme de production.</p>
+    </div>
+  </div>
+</div>
+<div class="container" >
+  
+   Nom :  {{name}}
+</div>
+ 
+
+<!--Section: Contact v.2-->
+<div class="container" >
+  <section class="mb-4" >
+
+    <!--Section heading-->
+    <h2 id="Contact" class="h1-responsive font-weight-bold text-center my-4">Contactez-nous</h2>
+    <div class="row" id="fomulaire">
+
+      <!--Grid column-->
+      <div class="col-md-12 mb-md-0 mb-5">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" id="name" name="name" class="form-control">
+                <label for="name" class="">Your name</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" id="email" name="email" class="form-control">
+                <label for="email" class="">Your email</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="md-form mb-0">
+                <input type="text" id="subject" name="subject" class="form-control">
+                <label for="subject" class="">Subject</label>
+              </div>
+            </div>
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-12">
+
+              <div class="md-form">
+                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                <label for="message">Your message</label>
+              </div>
+
+            </div>
+          </div>
+          <!--Grid row-->
+
+        </form>
+
+        <div  id="html">
+          <contenu-inscription></contenu-inscription>
+         <button   data-toggle="modal" data-target="#formulaire" class="btn btn-primary btn-block">Envoyer</button>
+        </div>
+        <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+
+    </div>
+  </section>
+  <!--Section: Contact v.2-->
+</div>
+<contenu-footer></contenu-footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/MesDirectives.js"></script>  
+<script type="text/javascript" src="js/angularJS.js"></script>  
+</body>
+</html>
